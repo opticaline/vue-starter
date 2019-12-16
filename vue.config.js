@@ -12,7 +12,9 @@ module.exports = {
     port: 8080,
     host: '0.0.0.0',
     before(app) {
-      mock.init(app, {});
+      mock.init(app, {
+        'directories': 'mock'
+      });
     }
   },
   runtimeCompiler: true
